@@ -1,0 +1,11 @@
+.footer {
+	padding: 24px;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(252, 252, 252, 1);
+	background:rgba(32, 32, 32, 1);
+}
+
+.footer-credit span {
+	color: rgba(255, 238, 50, 1);
+}

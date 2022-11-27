@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./images/Restofy-Logo.png" type="image/x-icon" />
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- Icon -->
+        <script src="https://unpkg.com/phosphor-icons"></script>
+
+        <title>Restofy</title>
+    </head>
+    <body>
+        <!-- skip to content -->
+        <a tabindex="1" href="#main" class="skip-to-content-link"
+            >Skip to content</a
+        >
+
+        <!-- Header Start -->
+        <header class="header">
+            <div class="header-logo">
+                <a href="/" class="header-logo__link">
+                    <img
+                        src="./images/Restofy.png"
+                        class="header-logo__image"
+                        alt="Restofy Logo"
+                    />
+                </a>
+            </div>
+            <nav-bar></nav-bar>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="hero-inner">
+                <h1 class="hero-inner__title">
+                    Welcome to <span>Restofy</span>
+                </h1>
+                <p class="hero-inner__subtitle">
+                    Find and try food from restaurants in various cities.
+                </p>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Main Start -->
+        <main id="main" class="main">
+            <section class="main-content">
+                <h2 tabindex="5" class="main-content__title">Restaurant Explore</h2>
+                <resto-list class="main-content__cards"></resto-list>
+            </section>
+        </main>
+        <!-- Main End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <p class="footer-copyright">Copyright © 2022 Restofy</p>
+            <p class="footer-credit">
+                Icon by <span>Phosphor</span> |
+                Created by <span>Anisa Permatasari</span>
+            </p>
+        </footer>
+        <!-- Footer End -->
+    </body>
+</html>
