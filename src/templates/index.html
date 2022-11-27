@@ -10,8 +10,8 @@
         />
         <meta name="keywords" content="Restofy" />
         <link rel="icon" href="./images/Restofy-Logo.png" type="image/x-icon" />
-        
-		<!-- Google Font -->
+
+        <!-- Google Font -->
         <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
             rel="stylesheet"
@@ -35,7 +35,7 @@
                 <a href="/" class="header-logo__link">
                     <img
                         src="./images/Restofy.png"
-                        class="header-logo__image"
+                        class="header-logo__link__image"
                         alt="Restofy Logo"
                     />
                 </a>
@@ -44,33 +44,38 @@
         </header>
         <!-- Header End -->
 
-        <!-- Hero Start -->
-        <div class="hero">
-            <div class="hero-inner">
-                <h1 class="hero-inner__title">
-                    Welcome to <span>Restofy</span>
-                </h1>
-                <p class="hero-inner__subtitle">
-                    Find and try food from restaurants in various cities.
-                </p>
-            </div>
-        </div>
-        <!-- Hero End -->
-
         <!-- Main Start -->
         <main id="main" class="main">
-            <section class="main-content">
+            <!-- Hero Section Start -->
+            <section class="main-hero">
+                <div class="main-hero__inner">
+                    <h1 class="main-hero__inner__title">
+                        Welcome to <span>Restofy</span>
+                    </h1>
+                    <p class="main-hero__inner__subtitle">
+                        Find and try food from restaurants in various cities.
+                    </p>
+                </div>
+            </section>
+            <!-- Hero Section End -->
+			
+			<!-- Content Section Start -->
+            <!-- <section id="MainContent" class="main-content">
                 <h2 tabindex="5" class="main-content__title">
                     Restaurant Explore
                 </h2>
                 <resto-list class="main-content__cards"></resto-list>
-            </section>
+            </section> -->
+			<!-- Content Section End -->
         </main>
         <!-- Main End -->
 
         <!-- Footer Start -->
         <footer class="footer">
             <p class="footer-copyright">Copyright © 2022 Restofy</p>
+            <p class="footer-credit">
+                All data obtained from <span>Dicoding</span>
+            </p>
             <p class="footer-credit">
                 Icon by <span>Phosphor</span> | Created by
                 <span>Anisa Permatasari</span>

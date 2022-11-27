@@ -1,5 +1,5 @@
-import restos from '../data/resto';
-import './card-resto';
+import restos from '../data/resto.js';
+import './card-resto.js';
 
 class RestoList extends HTMLElement {
     connectedCallback() {

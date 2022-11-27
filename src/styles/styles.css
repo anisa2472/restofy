@@ -1,4 +1,53 @@
-@import url('../styles/main.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(32, 32, 32, 1);
+    background: rgba(252, 252, 252, 1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+}
+
+.skip-to-content-link {
+    position: absolute;
+    left: calc(50% - 64.54px);
+    padding: 8px 16px;
+    background: rgba(255, 209, 0, 1);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+
+.skip-to-content-link:focus {
+    outline: 2px solid #333533;
+    transform: translateY(10%);
+    z-index: 3;
+}
+
 @import url('../styles/header.css');
+@import url('../styles/main.css');
 @import url('../styles/footer.css');
 @import url('../styles/responsive.css');

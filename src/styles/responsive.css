@@ -1,7 +1,7 @@
 /* Screen up to 700px */
 @media only screen and (min-width: 700px) {
 	/* 
-		* Resto Cards
+		Resto Cards
 	*/
 	.main-content__cards {
 		grid-template-columns: 1fr 1fr;
@@ -11,21 +11,21 @@
 /* Screen up to 1024px */
 @media only screen and (min-width: 1024px) {
     /* 
-		*
-		* HEADER
-		*
+		HEADER
 	*/
 
-    .header-logo {
+    .header .header-logo {
         margin: 0 8px;
     }
 
-    .header-hamburger-menu {
+    .header .header-hamburger-menu {
         display: none;
     }
 
-    .header-navigation {
+    .header .header-navigation {
+		visibility: visible;
         position: relative;
+		margin: 0 8px;
         padding: 0;
         width: auto;
         top: auto;
@@ -33,41 +33,40 @@
         box-shadow: none;
     }
 
-    .header-navigation__list {
+    .header .header-navigation .header-navigation__list {
         display: flex;
         gap: 16px;
         justify-content: flex-end;
     }
 
-    .header-navigation__list .header-navigation__item:last-child {
+    .header .header-navigation .header-navigation__list .header-navigation__item:last-child {
         background: rgba(255, 209, 0, 1);
         border-radius: 8px;
     }
 
-	.header-navigation__list .header-navigation__item:last-child:hover {
+	.header .header-navigation .header-navigation__list .header-navigation__item:last-child:hover {
 		background: rgba(255, 209, 0, 0.7)
 	}
 	
-	.header-navigation__item:hover{
+	.header .header-navigation .header-navigation__list .header-navigation__item:hover{
 		border-radius: 8px;
 	}
-    .header-navigation__item a {
+
+    .header .header-navigation .header-navigation__list .header-navigation__item a {
         font-size: 16px;
     }
 
-    .header-navigation__list .header-navigation__item:last-child a {
+    .header .header-navigation .header-navigation__list .header-navigation__item:last-child a {
         color: rgba(252, 252, 252, 1);
     }
 
-    .header-navigation__item i {
+    .header .header-navigation .header-navigation__list .header-navigation__item i {
         margin-right: 16px;
         font-size: 20px;
     }
 
 	/* 
-		*
-		* HERO
-		*
+		HERO
 	*/
 	.hero-inner__subtitle {
 		font-size: 18px;
@@ -88,7 +87,7 @@
 		* HERO
 		*
 	*/
-	.hero {
+	.main-hero {
 		margin: 0 auto;
 		max-width: 1000px;
 	}	

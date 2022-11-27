@@ -22,21 +22,14 @@ class NavBar extends HTMLElement {
 						<a tabindex="2" href="/"><i class="ph-house"></i>Home</a>
 					</li>
 					<li class="header-navigation__item">
-						<a tabindex="3" href="#"><i class="ph-heart"></i>Favorite</a>
+						<a tabindex="2" href="#"><i class="ph-heart"></i>Favorite</a>
 					</li>
 					<li class="header-navigation__item">
-						<a tabindex="4" href="https://github.com/anisa2472"><i class="ph-phone"></i>About Us</a>
+						<a tabindex="2" href="https://github.com/anisa2472"><i class="ph-phone"></i>About Us</a>
 					</li>
 				</ul>
 			</nav>
 		`;
-
-        this.querySelector('#hamburgerButton').addEventListener('click', () => {
-            document
-                .querySelector('#headerNavigation')
-                .classList.toggle('open');
-            document.querySelector('#hamburgerButton').classList.toggle('open');
-        });
     }
 }
 
