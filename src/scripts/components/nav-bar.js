@@ -22,10 +22,10 @@ class NavBar extends HTMLElement {
 						<a tabindex="2" href="/"><i class="ph-house"></i>Home</a>
 					</li>
 					<li class="header-navigation__item">
-						<a tabindex="2" href="#"><i class="ph-heart"></i>Favorite</a>
+						<a tabindex="2" href="#/favorite"><i class="ph-heart"></i>Favorite</a>
 					</li>
 					<li class="header-navigation__item">
-						<a tabindex="2" href="https://github.com/anisa2472"><i class="ph-phone"></i>About Us</a>
+						<a tabindex="2" href="https://github.com/anisa2472" target="_blank" rel="noreferrer"><i class="ph-phone"></i>About Us</a>
 					</li>
 				</ul>
 			</nav>
