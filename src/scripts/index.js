@@ -9,3 +9,11 @@ const app = new App({
     drawer: document.querySelector('#headerNavigation'),
     content: document.querySelector('#main'),
 });
+
+window.addEventListener('hashchange', () => {
+    app.renderContent();
+});
+
+window.addEventListener('load', () => {
+    app.renderContent();
+});
