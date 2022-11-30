@@ -14,7 +14,7 @@ class RestoSource {
 
 	static async imageResto(id) {
 		const response = await fetch(API_ENDPOINT.IMAGE_RESTOS_MEDIUM(id));
-		return response.json();
+		return response.url;
 	}
 }
 

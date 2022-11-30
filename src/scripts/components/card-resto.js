@@ -11,7 +11,7 @@ class CardResto extends HTMLElement {
 			<span>${this._resto.rating}</span>
 		</div>
 		<div class="card-resto__image">
-			<img src="${this._resto.pictureId}" alt="${this._resto.name} Restaurant">
+			<img src="${this._resto.restoImg}" alt="${this._resto.name} Restaurant">
 		</div>
 		<div class="card-resto__info">
 			<h3 tabindex="6" class="card-resto__info-name">${this._resto.name}</h2>
