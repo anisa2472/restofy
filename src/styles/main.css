@@ -17,7 +17,7 @@
     width: 100vw;
     min-height: 240px;
     text-align: center;
-    background: url('../public/images/heros/hero-image_4.jpg') no-repeat center
+    background: url('../public/images/heros/hero-image.jpg') no-repeat center
         center;
     background-size: cover;
 }

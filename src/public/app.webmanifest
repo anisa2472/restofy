@@ -1,0 +1,37 @@
+{
+    "id": "restaurant-catalogue-lite-pwa-1",
+    "start_url": "./index.html",
+    "name": "Restofy Lite",
+    "short_name": "Restofy Lite",
+    "description": "Restaurant Catalogue. Discover restaurants from various cities.",
+	"orientation": "portrait",
+    "display": "standalone",
+    "background_color": "#FCFCFC",
+    "theme_color": "#FFD100",
+    "icons": [
+        {
+            "src": "/icons/restofy-icon-72x72.png",
+            "size": "72x72",
+            "type": "image/png",
+            "purpose": "any"
+        },
+		{
+            "src": "/icons/restofy-icon-96x96.png",
+            "size": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        },
+		{
+            "src": "/icons/restofy-icon-144x144.png",
+            "size": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+		{
+            "src": "/icons/restofy-icon-192x192.png",
+            "size": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

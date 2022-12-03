@@ -2,6 +2,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/styles.css';
 import './components/nav-bar.js';
 import App from './views/app.js';
+import swRegister from './utils/sw-register.js';
 
 const app = new App({
     button: document.querySelector('#hamburgerButton'),
@@ -15,4 +16,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
     app.renderContent();
+	swRegister();
 });

@@ -1,6 +1,7 @@
 const CONFIG = {
     BASE_URL: 'https://restaurant-api.dicoding.dev/',
-	BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/'
+    BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/',
+    CACHE_NAME: 'Restofy-V1',
 };
 
 export default CONFIG;
