@@ -45,6 +45,7 @@
 /* 
 	* Resto Cards
 */
+
 .main-content__cards {
     width: 100%;
     display: grid;
@@ -145,4 +146,12 @@ card-resto {
     color: rgba(32, 32, 32, 1);
     background: rgba(255, 238, 50, 1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 
+	* Resto Detail
+*/
+
+.main-content__header {
+	
 }

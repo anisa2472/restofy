@@ -1,15 +1,22 @@
 import UrlParser from '../../routes/url-parser.js';
 import RestoSource from '../../data/resto-source';
+import createRestoDetailTemplate from '../templates/template-creator.js';
 
 const RestoDetail = {
     async render() {
-        return `<h2>RESTAURANT DETAIL</h2>`;
+        return `
+			<section id="mainContent" class="main-content"></section>`;
     },
 
     async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const resto = await RestoSource.detailResto(url.id);
-        console.log(resto.restaurant);
+        const restoImg = await RestoSource.imageResto(
+            resto.restaurant.pictureId
+        );
+        const restoDetail = { ...resto.restaurant, restoImg };
+        const restoContainer = document.querySelector('#mainContent');
+        restoContainer.innerHTML = createRestoDetailTemplate(restoDetail);
     },
 };
 

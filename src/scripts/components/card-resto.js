@@ -20,7 +20,7 @@ class CardResto extends HTMLElement {
 				<span>${this._resto.city}</span>
 			</div>
 			<p class="card-resto__info-desc">${this._resto.description}</p>
-			<a tabindex="6" aria-label="Read more about ${this._resto.name} restaurant" href="#" class="card-resto__info-more">Read More</a>
+			<a tabindex="6" aria-label="Read more about ${this._resto.name} restaurant" href="#/detail/${this._resto.id}" class="card-resto__info-more">Read More</a>
 		</div>
 		`;
     }

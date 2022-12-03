@@ -18,14 +18,14 @@ const RestoExplore = {
 				<h2 tabindex="5" class="main-content__title">
 					Restaurant Explore
 				</h2>
-				<div id="MainContentCards" class="main-content__cards"></div>
+				<div id="mainContentCards" class="main-content__cards"></div>
 			</section>
 		`;
     },
 
     async afterRender() {
         const restos = await RestoSource.listRestos();
-        const restoContainer = document.querySelector('#MainContentCards');
+        const restoContainer = document.querySelector('#mainContentCards');
         restos.forEach(async (resto) => {
             const restoImg = await RestoSource.imageResto(resto.pictureId);
             const _resto = { ...resto, restoImg };
