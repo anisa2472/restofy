@@ -16,11 +16,12 @@ const createRestoDetailTemplate = (resto) => `
 		</div>
 		<div class="main-content__header__category">
 			${resto.categories
-				.map((category) => {
-					return `<p>${category.name}</p>`;
-				})
-				.join(' ')}
+                .map((category) => {
+                    return `<p>${category.name}</p>`;
+                })
+                .join(' ')}
 		</div>
+		<div id="like" class="main-content__header__like"></div>
 	</div>
 	<div class="main-content__desc">
 		<p>${resto.description}</p>
@@ -30,32 +31,50 @@ const createRestoDetailTemplate = (resto) => `
 		<div class="main-content__menu__foods">
 			<h4>Foods</h4>
 			${resto.menus.foods
-				.map((food) => {
-					return `<p>${food.name}</p>`;
-				})
-				.join(' ')}
+                .map((food) => {
+                    return `<p>${food.name}</p>`;
+                })
+                .join(' ')}
 		</div>
 		<div class="main-content__menu__drinks">
 			<h4>Drinks</h4>
 				${resto.menus.drinks
-					.map((drink) => {
-						return `<p>${drink.name}</p>`;
-					})
-					.join(' ')}
+                    .map((drink) => {
+                        return `<p>${drink.name}</p>`;
+                    })
+                    .join(' ')}
 		</div>
 	</div>
 	<div class="main-content__reviews">
 		<h3>Reviews</h3>
 		<div class="main-content__reviews__review">
 			${resto.customerReviews
-				.map((review) => {
-					return `<p>${review.name}</p>
+                .map((review) => {
+                    return `<p>${review.name}</p>
 					<p>${review.date}</p>
 					<p>${review.review}</p>`;
-				})
-				.join(' ')}
+                })
+                .join(' ')}
 		</div>
 	</div>
 `;
 
-export default createRestoDetailTemplate;
+const createLikeButtonTemplate = `
+		<button aria-label="like this restaurant" id="likeButton">
+			<i class="ph-heart"></i>
+			<span>Like</span>
+		</button>
+	`;
+
+const createLikedButtonTemplate = `
+		<button aria-label="unlike this restaurant" id="likeButton">
+			<i class="ph-heart-fill"></i>
+			<span>Liked</span>
+		</button>
+	`;
+
+export {
+    createRestoDetailTemplate,
+    createLikeButtonTemplate,
+    createLikedButtonTemplate,
+};
